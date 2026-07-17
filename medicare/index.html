@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediTrack — Pharmacy Management</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span> MediTrack</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count">0</span></a>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-slider">
+    <div class="slide slide-1 active">
+      <div class="container slide-content">
+        <div class="slide-brand">MediTrack</div>
+        <p class="slide-text">Trusted pharmacy management for modern care — medicines, wellness, and devices delivered with confidence.</p>
+        <div class="slide-actions">
+          <a href="products.html" class="btn btn-primary">Shop Medicines</a>
+          <a href="categories.html" class="btn btn-ghost">Explore Categories</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="container slide-content">
+        <div class="slide-brand">MediTrack</div>
+        <p class="slide-text">Real-time inventory, prescription-ready stock, and fast checkout for patients and pharmacy teams.</p>
+        <div class="slide-actions">
+          <a href="dashboard.html" class="btn btn-primary">Open Dashboard</a>
+          <a href="about.html" class="btn btn-ghost">How it works</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="container slide-content">
+        <div class="slide-brand">MediTrack</div>
+        <p class="slide-text">From vitamins to first-aid kits — curated health essentials with free shipping over ₹999.</p>
+        <div class="slide-actions">
+          <a href="products.html?category=vitamins" class="btn btn-primary">Shop Vitamins</a>
+          <a href="register.html" class="btn btn-ghost">Create Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-arrows">
+      <button type="button" data-prev aria-label="Previous">‹</button>
+      <button type="button" data-next aria-label="Next">›</button>
+    </div>
+    <div class="slider-nav"></div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Same-day dispatch</h3>
+          <p>Orders placed before 2 PM ship the same day from verified pharmacy stock.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h3>Genuine medicines</h3>
+          <p>Every SKU is tracked with batch and expiry for complete supply transparency.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📋</div>
+          <h3>Rx-ready workflow</h3>
+          <p>Prescription items flagged clearly so staff and customers stay compliant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Shop by category</h2>
+      <p class="section-sub">Browse popular pharmacy departments and find what you need faster.</p>
+      <div class="cat-grid" id="home-categories"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="toolbar">
+        <div>
+          <h2 class="section-title" style="margin-bottom:0.2rem">Featured products</h2>
+          <p class="section-sub" style="margin-bottom:0">Top picks from our pharmacy inventory.</p>
+        </div>
+        <a href="products.html" class="btn btn-outline">View all</a>
+      </div>
+      <div class="product-grid" id="featured-products"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark">M</span> MediTrack</a>
+          <p class="footer-about">Pharmacy management and healthcare commerce in one clean platform.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="products.html">All products</a>
+          <a href="categories.html">Categories</a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MediTrack Pharmacy. All rights reserved.</span>
+        <span>Demo store · HTML · CSS · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

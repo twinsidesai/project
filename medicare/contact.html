@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MediTrack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span> MediTrack</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count">0</span></a>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-hero">
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+      <h1>Contact us</h1>
+      <p class="section-sub">Questions about orders, stock, or pharmacy partnership? Reach out.</p>
+    </div>
+
+    <section class="section" style="padding-top:0">
+      <div class="container two-col">
+        <form class="checkout-form" id="contact-form">
+          <h2>Send a message</h2>
+          <div id="contact-alert" class="alert"></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Name</label>
+              <input type="text" id="c-name" required />
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-subject">Subject</label>
+            <input type="text" id="c-subject" required />
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div>
+          <div class="info-block">
+            <h3>Pharmacy desk</h3>
+            <ul class="contact-list">
+              <li><strong>Phone:</strong> +91 98765 43210</li>
+              <li><strong>Email:</strong> support@meditrack.com</li>
+              <li><strong>Hours:</strong> Mon–Sat, 8:00 AM – 10:00 PM</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>Visit us</h3>
+            <p>12 Health Plaza, MG Road<br />Bengaluru, Karnataka 560001</p>
+          </div>
+          <div class="info-block">
+            <h3>Emergency Rx</h3>
+            <p>For urgent prescription fulfillment, call the pharmacy desk and mention your MediTrack order ID.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark">M</span> MediTrack</a>
+          <p class="footer-about">Pharmacy management and healthcare commerce in one clean platform.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="products.html">All products</a>
+          <a href="categories.html">Categories</a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MediTrack Pharmacy. All rights reserved.</span>
+        <span>Demo store · HTML · CSS · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

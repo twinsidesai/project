@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed — MediTrack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span> MediTrack</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count">0</span></a>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width:560px;text-align:center">
+        <div style="width:80px;height:80px;margin:0 auto 1.25rem;border-radius:50%;background:linear-gradient(145deg,var(--teal-100),var(--mint));display:grid;place-items:center;font-size:2.2rem">✓</div>
+        <h1 class="section-title" style="text-align:center">Order placed successfully</h1>
+        <p class="section-sub" style="margin-inline:auto;text-align:center">Thank you for shopping with MediTrack. Your medicines will be prepared shortly.</p>
+        <div class="info-block" style="text-align:left;margin-bottom:1.5rem">
+          <h3>Order ID</h3>
+          <p id="order-id" style="font-family:var(--font-brand);font-size:1.25rem;color:var(--teal-800);font-weight:700">—</p>
+          <p style="margin-top:0.75rem">A confirmation email will be sent once pharmacy staff verifies your order.</p>
+        </div>
+        <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap">
+          <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+          <a href="dashboard.html" class="btn btn-outline">View Dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <span>© 2026 MediTrack Pharmacy. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const order = new URLSearchParams(location.search).get('order') || 'MT00000000';
+    document.getElementById('order-id').textContent = '#' + order;
+  </script>
+</body>
+</html>
